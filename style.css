@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+/* Container */
+.container{
+    background:white;
+    width:100%;
+    max-width:500px;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* Input Section */
+.input-section{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+/* Inputs */
+input,
+select{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    outline:none;
+}
+
+/* Buttons */
+button{
+    padding:10px 15px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+/* Filter Buttons */
+.filter-section{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+/* Task List */
+ul{
+    margin-top:20px;
+    list-style:none;
+}
+
+/* Task Item */
+li{
+    background:#f1f5f9;
+    padding:12px;
+    margin-bottom:10px;
+    border-radius:6px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+}
+
+/* Completed Task */
+.completed{
+    text-decoration:line-through;
+    opacity:0.6;
+}
+
+/* Action Buttons */
+.editBtn{
+    background:#f59e0b;
+}
+
+.completeBtn{
+    background:#22c55e;
+}
+
+.deleteBtn{
+    background:#ef4444;
+}
+
+/* Stats */
+.stats{
+    margin-top:20px;
+    display:flex;
+    justify-content:space-between;
+    font-weight:bold;
+    font-size:14px;
+    gap:10px;
+}
+
+/* Priority Colors */
+.High{
+    color:red;
+    font-weight:bold;
+}
+
+.Medium{
+    color:orange;
+    font-weight:bold;
+}
+
+.Low{
+    color:green;
+    font-weight:bold;
+}
+
+/* Dark Mode */
+.dark-body{
+    background:#020617;
+}
+
+.dark-body .container{
+    background:#111827;
+    color:white;
+}
+
+.dark-body input,
+.dark-body select{
+    background:#1e293b;
+    color:white;
+    border:none;
+}
+
+.dark-body li{
+    background:#1e293b;
+}
+
+.dark-body #themeBtn{
+    background:#facc15;
+    color:black;
+}
+
+/* Theme Button */
+#themeBtn{
+    float:right;
+    margin-bottom:10px;
+}
